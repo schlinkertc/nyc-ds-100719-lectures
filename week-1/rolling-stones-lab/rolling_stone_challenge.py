@@ -8,18 +8,23 @@ import csv
 
 with open('data.csv') as f:
     reader = csv.DictReader(f)
-    roll_dict = [{k:v for k,v in row.items()} for row in reader]
+    roll_dict = [{k:v 
+                  for k,v in row.items()
+                  } for row in reader
+                ]
     #try to do the same thing in series of nested loops instead of comprehension
     roll_dict1 =[]
     for row in reader:
-        for k,v in row.items():
-            roll_dict1.append(dict())
+        roll_dict1.append(row)
+        print(type(row))
+        #for k,v in row.items():
+            #roll_dict1.append(dict())
     
 def find_by_name(album_name):
     for album in roll_dict:
         if album['album'] == album_name:
             return album
-    return "None"
+    return None
 
 def find_by_rank(album_rank):
     for album in roll_dict:
@@ -45,6 +50,7 @@ def all_titles():
     all_titles = [album['album'] for album in roll_dict]
     return sorted(all_titles)
 
+#never have function name equal to a list name. 
 all_titles = all_titles()
 
 def all_artists():
