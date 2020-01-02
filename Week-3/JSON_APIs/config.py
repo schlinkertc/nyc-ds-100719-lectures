@@ -1,0 +1,5 @@
+yelp_client_id = 'bTbNM_4fpBA2r1xO8IveLw'
+yelp_api_key = 'idkp00__8KIFtZgw7OBh0Dvvthj6V1XgP2lbfTKuRrIkSYThAM_xmBjg1OCQ7Tq4ikjtbP7pLbIvBrsd8wqG96JY0wcs8zF9GDv08GUPSef3czkPIYPqNh9qu_2xXXYx'
+aws_password = 'NarI31sN5PZ1'
+aws_host = 'flatirondb.cjk1vmqlqaty.us-east-2.rds.amazonaws.com'
+aws_user = 'admin'
